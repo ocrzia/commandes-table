@@ -117,7 +117,7 @@ for (let num in commandesParTable) {
 
   tableInfo.commandes.forEach((commande, index) => {
     const divCommande = document.createElement("div");
-    divCommande.innerHTML = `<strong>Client :</strong> ${commande.client}<br><ul>` +
+    divCommande.innerHTML = `<ul>` +
       commande.plats.map(p => `<li>${p.nom} - ${p.prix.toFixed(2)}€</li>`).join("") +
       `</ul>`;
     details.appendChild(divCommande);
